@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+/* Main container that holds both the button container and the response text */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Container that holds the button and title */
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Style for the button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+button.recording {
+    background-color: #f44336;
+}
+
+button i {
+    font-size: 1.5em;
+}
+
+button:hover:enabled {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Audio player styling */
+audio {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.response-container {
+    margin: 20px auto; /* Center the response container */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: monospace;
+    font-size: 18px; /* Larger text size for readability */
+    max-width: 80%; /* Limit horizontal growth */
+    min-width: 300px; /* Minimum width for readability */
+    max-height: 400px; /* Limit vertical growth */
+    overflow-y: auto; /* Add scroll if content overflows vertically */
+    overflow-x: hidden;
+    white-space: pre-wrap; /* Maintain JSON formatting */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* Responsive styling to allow width control and height expansion */
+@media screen and (max-width: 600px) {
+    #response-text {
+        font-size: 2em;  /* Make the font size smaller on small screens */
+        max-width: 90%;  /* Adjust max-width */
+    }
+}
