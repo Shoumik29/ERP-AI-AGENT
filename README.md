@@ -10,4 +10,4 @@ Details set up instructions:
 6. Go to 'app/Controllers/Controller.php' and add your huggingface token to use the APIs
 6. Start Artisan server by 'php artisan serve' command
 
-Here is a demo link: erpaiagent.vercel.app
+Here is a demo link: https://erpaiagent.vercel.app
